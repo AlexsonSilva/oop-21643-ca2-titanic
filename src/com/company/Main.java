@@ -12,6 +12,7 @@ public class Main {
             public void run() {
                Menu menu = new Menu();
                menu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+               menu.setResizable(false);
                menu.setVisible(true);
                menu.setSize(460,500);
 
