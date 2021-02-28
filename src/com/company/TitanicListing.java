@@ -48,7 +48,7 @@ public class TitanicListing extends JFrame {
         JTable table = new JTable(model);
 
         TitanicQueries tq = new TitanicQueries();
-        List<Passenger> passengers = tq.getPassengersByGender("female");
+        List<Passenger> passengers = tq.getPassengersByGender("male");
 
         for(Passenger p : passengers) {
 
@@ -96,7 +96,7 @@ public class TitanicListing extends JFrame {
         JTable table = new JTable(model);
 
         TitanicQueries tq = new TitanicQueries();
-        List<Passenger> passengers = tq.getPassengersByNameGender("michael", "male");
+        List<Passenger> passengers = tq.getPassengersByNameGender("owen", "male");
 
         for (Passenger p : passengers){
             model.addRow(new Object[]{p.name, p.gender, p.age});

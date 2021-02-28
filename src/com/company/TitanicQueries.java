@@ -89,7 +89,7 @@ public class TitanicQueries{
         List<Passenger> results = null;
 
         try {
-            getPeopleByGender.setString(1, "%" + gender + "%");
+            getPeopleByGender.setString(1, gender);
 
             resultSet = getPeopleByGender.executeQuery();
 
@@ -150,7 +150,7 @@ public class TitanicQueries{
 
         try {
             getPeopleByNameGender.setString(1, "%" + name + "%");
-            getPeopleByNameGender.setString(1, "%" + gender + "%");
+            getPeopleByNameGender.setString(2, gender);
 
 
             resultSet = getPeopleByNameGender.executeQuery();
